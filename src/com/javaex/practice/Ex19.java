@@ -3,13 +3,16 @@ package com.javaex.practice;
 public class Ex19 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		아래 프로그램의 결과를 코드작성전에 먼저 예상해보고 코드를 작성해 확인해 보세요
+		
+		int num01 = 40;
+		int num02 = 50;
+		int reuslt = (num01++) + (++num02); // 40 + 51 = 91
+		
+		System.out.println(reuslt); // 91
+		System.out.println(num01); // 41
+		System.out.println(num02); // 51
+
 	}
 }

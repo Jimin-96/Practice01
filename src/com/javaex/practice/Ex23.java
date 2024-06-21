@@ -3,13 +3,21 @@ package com.javaex.practice;
 public class Ex23 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		다음의 요구사항을 만족하는 코드를 작성하세요.
+		
+//		double 형의 speed, time, distance 변수를 선언한다.
+//		speed 변수에 90.0을 저장한다.
+//		time 변수에 60.0을 저장한다.
+//		speed와 time을 곱하고 그 결과를 distance에 저장한다.
+//		distance를 콘솔에 출력한다.
+		
+		
+		double speed = 90.0;
+		double time = 60.0;
+		double distance = speed*time;
+		
+		System.out.println(distance);
+
 	}
 }

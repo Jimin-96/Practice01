@@ -1,15 +1,25 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex31 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		상품을 구매하면 정가의 10%를 부가세로 부여한다. 아래와 같이 출력되도록 프로그램을 작성하세요
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("상품가격:");
+		int item = sc.nextInt();
+		System.out.print("받은가격:");
+		int total = sc.nextInt();
+		System.out.println("받은돈:"+total);
+		System.out.println("상품가격:"+item);
+		System.out.println("부가세:"+item/10);
+		System.out.println("잔돈:"+(total-item));
+		
+		sc.close();
+		
 	}
 }

@@ -1,15 +1,26 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex37 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		사용자에게 연필의 개수와 인원수를 입력받아 모든인원에게 같은수의 연필을 나눠주려고 한다
+//		1인당 연필의 받을수 있는 연필의 개수와 나머지를 구하시오
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("전체 연필갯수를 입력하세요:");
+		int a = sc.nextInt();
+		System.out.print("전체 인원수를 입력하세요:");
+		int b = sc.nextInt();
+		System.out.println("1인당 연필의 갯수는 "+(a/b)+"입니다.");
+		System.out.println("남은 연필의 갯수는 "+(a%b)+"입니다.");
+		
+		sc.close();
+		
+		
 	}
 }

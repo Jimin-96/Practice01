@@ -1,15 +1,24 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex33 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		사용자로부터 구의 반지름을 입력받아 구의 부피를 계산하는 프로그램을 작성하세요.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double pi = 3.14;
+		double a = (double)4/3;
+		
+		
+		System.out.print("반지름:");
+		double r = sc.nextDouble();
+		System.out.println("구의 부피는 "+(pi*(r*r*r))*a+"입니다.");
+		
+		sc.close();
+		
 	}
 }

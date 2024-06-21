@@ -10,8 +10,12 @@ public class Ex07 {
 		boolean result = a>b == true;
 		System.out.println(result);
 		
-		String str = "#_of_workers";
-	    System.out.println(str);
+		int num_of_workers;
+		int contOfLetterslnString;
+		int stLevel1;
+		int person;
+		int _person;
+	    
 	    
 	    
 	   

@@ -3,13 +3,20 @@ package com.javaex.practice;
 public class Ex25 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		아래의 출력결과를 예상하여 작성하세요. 
+//		(코드를 작성해서 예상과 맞는지 확인해 보세요.)
+		
+		int a = 13;
+		
+		System.out.println((a>13) && (a>13)); //F&&F = F
+		System.out.println((a>13) || (a>13)); //F||F = F
+		System.out.println((a/3==4) && (a%3==2)); //T&&F = F
+		System.out.println((a/3==4) || (a%3==2)); //T||F = T
+		System.out.println((a/3==4) && (a%3==2) || (a/3==4)); //T&&F||T = T
+		
+		
+		
+
 	}
 }

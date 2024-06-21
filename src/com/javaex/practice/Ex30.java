@@ -1,15 +1,20 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex30 {
 
 	public static void main(String[] args) {
-		/*
-		 * JVM에 대한 설명으로 틀린 것을 찾아 수정해보세요
-		 * 1. 운영체제별로 다른 jvm이 사용된다.
-		 * 2. JVM은 java.exe 명령어에 의해 구동된다
-         * 3. JVM은 바이트코드(~.class)를 기계어로 변환시키고 구동시키다.
-         * 4. 운영체제별로 동일한 JVM이 사용된다.
-         * 5. 바이트코드(~.class)는 운영체제에 독립적이만, JVM은 운영체제에 종속적이다.
-*/
+		
+//		마일을 km로 변환하는 프로그램을 작성하세요.(1마일 = 1.609km 상수로 지정)
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double km = 1.609;
+		System.out.print("마일을 입력하세요:");
+		int mil = sc.nextInt();
+		System.out.println(mil+"마일은"+km*mil+"킬로미터 입니다.");
+		
+		sc.close();
 	}
 }

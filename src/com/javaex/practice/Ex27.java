@@ -10,7 +10,7 @@ public class Ex27 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		double pi = 3.14;
+		final double pi = 3.14;
 		System.out.print("반지름을 입력하세요:");
 		int unm = sc.nextInt();
 		System.out.println("원의 넓이는 "+(unm*unm*pi)+"입니다.");
